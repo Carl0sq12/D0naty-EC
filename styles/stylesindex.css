@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    list-style: none
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular';
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)),
+        url(https://www.hungersolutions.org/wp-content/uploads/2021/08/group-different-people-volunteering-foodbank-poor-people-scaled.jpg) center bottom no-repeat;
+    background-size: cover;
+    background-position: center 20%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    font-size: 65px;
+    font-weight: 800;
+    width: 50px;
+    height: 70px;
+}
+
+/*Añadir las dimensiones de la imagen*/
+.logo img {
+    width: 120px;
+    height: 100px;
+    padding-top: 30px;
+    padding-left: 80px;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 26px;
+    color: rgb(221, 202, 182);
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(180, 158, 162);
+}
+
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 60px;
+    line-height: 80px;
+    color: #f9e5b3;
+    text-transform: uppercase;
+    margin-top: 39px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.header-content p {
+    font-size: 23px;
+    color: #C5C5C5;
+    padding: 0 250px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    text-align: center;
+}
+
+.boton-1 {
+    display: inline-block;    /*Aplicar bien el margen y padding */
+    padding: 11px 45px;
+    margin-top: 30px;
+    background-color: rgb(133, 42, 24);
+    color: rgb(255, 223, 223);
+    text-transform: Uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boton-1:hover {
+    background-color: rgb(183, 120, 120);
+}
+
+/* Estilos generales para la sección de café */
+
+.coffee {
+    padding: 100px 0;
+    background-color: #fff3f5;
+    position: relative;
+}
+
+.coffee-content {
+    text-align: center;
+}
+
+.coffee-content h2 {
+    font-size: 45px;
+    line-height: 70px;
+    color: #bb5656; /* Color del título principal */
+    text-transform: uppercase;
+    padding: 0 150px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.txt-parrafo {
+    font-size: 23px;
+    color: #111b30; /* Color del párrafo principal */
+    padding: 0 250px;
+    margin-bottom: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+/* Grupo de divs: Separación y alineación */
+.coffee-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px; /* Reducir espacio entre divs */
+    margin-top: 50px; /* Separar del margen superior */
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* Estilo para cada div */
+.coffee-1 {
+    position: relative; /* Posicionamiento del contenido interno */
+    width: 350px; /* Ancho fijo para un mejor diseño */
+    padding: 20px;
+    overflow: hidden; /* Ocultar contenido que sobresalga */
+    border-radius: 10px;
+    background-color: #f6e2e2; /* Fondo de los divs */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Para centrar imagen y contenido */
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: space-between; /* Espaciar contenido */
+}
+
+/* Estilo para las imágenes */
+.coffee-1 img {
+    width: 350px; /* Ajustar tamaño */
+    height: 250px;
+    object-fit: cover; /* Asegura que las imágenes no se deformen */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transición */
+}
+
+.coffee-1 img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    opacity: 0.9; /* Hace que la imagen sea un poco más opaca */
+}
+
+/* Títulos dentro de los divs */
+.coffee-1 .titulo-bebida {
+    color: #772026; /* Color de los títulos */
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: Verdana;
+    text-align: center;
+}
+
+/* Texto dentro de los divs */
+.coffee-1 .texto-bebida {
+    color: #1f0f0f;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: Verdana;
+    text-align: center;
+}
+
+/* Configuración del video que aparecerá dentro del index.html */
+/* La sección que contiene el video y el texto */
+.video-section {
+    position: relative;  /* Necesario para poder posicionar el texto sobre el video */
+    height: 100vh;  /* Establece la altura de la sección al 100% de la ventana */
+    overflow: hidden;  /* Asegura que el video no se desborde si cambia su tamaño */
+}
+
+/* El video como fondo */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.video-container::before {
+    content: '';  /* Crea una capa vacía */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);  /* Fondo negro con opacidad */
+    z-index: 1;  /* Pone la capa oscura encima del video */
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;  /* Asegura que el video esté debajo de la capa oscura */
+}
+
+/* Estilo para el título */
+.video-title {
+    position: absolute;
+    top: 40%;  /* Coloca el título ligeramente más arriba */
+    left: 50%;
+    transform: translate(-50%, -50%);  /* Centra el título */
+    color: #e2bbb7;  /* Color dorado para el título */
+    font-size: 40px;  /* Tamaño de fuente para el título */
+    font-family: verdana;
+    text-align: center;
+    z-index: 2;  /* Asegura que el título quede encima de todo */
+}
+
+/* Estilo para la descripción */
+.video-description {
+    position: absolute;
+    top: 55%;  /* Coloca la descripción un poco más abajo que el título */
+    left: 50%;
+    margin-top: 20px;
+    transform: translate(-50%, -50%);  /* Centra la descripción */
+    color: rgb(231, 216, 216);  /* Color blanco para la descripción */
+    font-size: 23px;  /* Tamaño de fuente para la descripción */
+    text-align: center;
+    font-family: Verdana;
+    z-index: 2;  /* Asegura que la descripción quede encima de la capa oscura */
+}
+
+/* Configuración del pie de página */
+.footer {
+    background-color: #170404; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center;
+    padding: 20px 0;
+    font-family: Verdana;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin-bottom: 15px;
+}
+
+/* Estilo para los enlaces */
+.footer-link {
+    color: #dfb7b7;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para las imágenes de redes sociales */
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Efecto de zoom al pasar el cursor */
+    opacity: 0.8; /* Ligero efecto de transparencia */
+}

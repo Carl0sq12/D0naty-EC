@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    list-style: none
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos para el Menú de Navegación */
+.header {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+    ), 
+    url('https://image.freepik.com/foto-gratis/voluntarios-sonrientes-preparando-cajas-comida-donacion_23-2148732708.jpg') center bottom no-repeat; /* Imagen de fondo */
+    background-size: cover;
+    background-position: center 20%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.menu {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    color: white;
+    font-size: 65px;
+    font-weight: 800;
+    width: 50px;
+    height: 70px;
+}
+.logo img {
+    width: 80px;
+    height: 50px;
+    padding-top: 15px;
+    padding-left: 80px;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 26px;
+    color: rgb(144, 114, 81);
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(180, 158, 162);
+}
+
+/* Menú - Estilos del contenedor de los items */
+
+
+.menu-section {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    position: relative;
+}
+
+/* Estilos para los items del menú */
+.item {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    color: white;
+}
+
+.item:hover {
+    transform: translateY(-10px);
+}
+
+.item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item h3 {
+    margin: 15px 0 10px;
+    font-size: 1.2em;
+}
+
+.item p {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.item button {
+    padding: 10px 20px;
+    font-size: 0.9em;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.item button:hover {
+    background-color: #555;
+}
+
+/* Banner con imágenes de separación */
+.banner-img {
+    text-align: center;
+    margin: 40px 0;
+    position: relative;
+    overflow: hidden; /* Para evitar que la imagen se desborde */
+}
+
+.banner-img img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agregamos transición para el hover */
+}
+
+/* Efecto al pasar el ratón sobre el banner */
+.banner-img:hover img {
+    transform: scale(1.05); /* Amplía la imagen al pasar el ratón */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+/* Configuración del pie de página */
+.footer {
+    background-color: #170404; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center;
+    padding: 20px 0;
+    font-family: Verdana;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin-bottom: 15px;
+}
+
+/* Estilo para los enlaces */
+.footer-link {
+    color: #dfb7b7;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para las imágenes de redes sociales */
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Efecto de zoom al pasar el cursor */
+    opacity: 0.8; /* Ligero efecto de transparencia */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .navbar a {
+        padding: 15px 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .redes-sociales {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .menu-section h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 60px;
+    }
+
+    .menu-section h2 {
+        font-size: 2em;
+    }
+
+    .item img {
+        height: 180px;
+    }
+
+    .item button {
+        font-size: 0.8em;
+    }
+}

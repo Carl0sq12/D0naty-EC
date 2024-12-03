@@ -1,0 +1,162 @@
+/* estilos generales*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://static.wixstatic.com/media/11062b_dd6647fc9a074cbda31000f3b83369d7~mv2.jpg/v1/fill/w_2500,h_1668,al_c/11062b_dd6647fc9a074cbda31000f3b83369d7~mv2.jpg'); /* Fondo general */
+    background-size: cover;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo img {
+    height: 60px;
+    width: 100px;
+    margin-left: 200px;
+}
+
+.logo h1, .logo p {
+    margin: 0;
+    color: #fddcdc;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding-right: 25px;
+}
+
+nav ul li a {
+    color: #ffe82d;
+    text-decoration: none;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: hsl(55, 92%, 33%);
+    cursor: pointer;
+}
+
+.conocenos {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.conocenos h2 {
+    font-size: 2rem;
+    color: #ffe82d;
+}
+
+.conocenos-p {
+    font-size: 20px;
+    color: white;
+    font-family: Verdana;
+    line-height: 1.5;
+}
+
+.sucursales {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sucursal {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    gap: 10px; /* Espacio entre elementos dentro de cada sucursal */
+}
+
+.sucursal h3 {
+    font-size: 1.5rem;
+    color: #ffd700;
+}
+
+.sucursal button {
+    background-color: #ffd700;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%; /* Asegura que todos los botones tengan el mismo ancho */
+    max-width: 150px; /* Ajusta el tamaño máximo de los botones */
+    text-align: center;
+}
+
+
+.historia {
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.historia h2 {
+    font-size: 2rem;
+    color: #ffe82d;
+}
+
+/* Configuración del pie de página */
+.footer {
+    background-color: #170404; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center;
+    padding: 20px 0;
+    font-family: Verdana;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin-bottom: 15px;
+}
+
+/* Estilo para los enlaces */
+.footer-link {
+    color: #dfb7b7;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para las imágenes de redes sociales */
+.social-icons a {
+    margin: 0 10px;
+    
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Efecto de zoom al pasar el cursor */
+    opacity: 0.8; /* Ligero efecto de transparencia */
+}
